@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mera Driver</title>
+
+    <script src="./script/jquery.min.js"></script>
+    <!-- swiper slider css  -->
+ 
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
+
+    <!-- main cass  -->
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <!-- font awesome link  -->
+
+    <!-- Font-awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+    <!-- swiper js  -->
+    <script src="./script/swiper.js"></script>
+
+    <!-- animation link  -->
+
+    <link rel="stylesheet" href="./styles/animate.min.css">
+
+    <!-- aos socroll animation library css link  -->
+
+    <link rel="stylesheet" href="./styles/aos.css">
+    <link rel="stylesheet" href="./styles/custom.css">
+
+    <!-- bootstrap link  -->
+
+
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <script src="./script/bootstrap.bundle.min.js"></script>
+
+    
+
+</head>
+
+<body>
+
+    <section class="header_section">
+        <div class="">
+            <nav class="navbar navbar-expand-lg py-3">
+                <div class="container MainHeaderCustomCOntainer">
+                    <div class="mobileHeader">
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/common-image/header-logo.png" class="header-logo" alt="">
+
+                        </a>
+                        <p class="navbar-toggler">
+                            <span class="navbar-toggler-icon"></span>
+                        </p>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ul" id="navbarSupportedContent">
+                        <div class="closeMenu">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="search-jobs.html">Search Job</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="job.html">Post Job</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                            </li>
+
+
+                        </ul>
+                        <!-- <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    </div>
+
+                    <div class="d-none d-lg-block book-driver-btn">
+                        <!-- <a href="" class="btn btn-dark">Book a Driver</a> -->
+                        <!-- <span>|</span> <span style="font-size: 13px;">Support FAQ</span> |  -->
+                        <span class="float-start me-2" style="font-size: 13px;">
+                            <div class="dropdown">
+                                <p class="dropdown-toggle hideArr mb-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i>
+                                </p>
+                                <ul class="dropdown-menu" style="margin-top: 22px;">
+                                  <li><a class="dropdown-item" href="#">Login</a></li>
+                                  <li><a class="dropdown-item" href="#">Driver Login</a></li>
+                                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                </ul>
+                              </div>
+
+                            
+                        </span> | 
+                        <span><i
+                                class="fa-brands fa-facebook-f"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span> <span><i
+                                class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- breadcrum section  -->
+    <!-- <section class="innerPageBanner">
+        <div class="centrizedDiv">
+            <h1>Our Plans</h1>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+        </div>end of centrizedDiv-->
+    <!-- </section> -->
+
+
+    
+
+
+    <!-- pricing section  -->
+
+    <!-- <section class="benefits-of-driver-section">
+        <section class="price-heading-section">
+            <div class="benefits-of-driver-heading">
+                <div class="container">
+                    <h1 class="text-hading">Benefits Of Driver On Call In Delhi</h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="benefits-of-driver-card text-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <div>
+                            <h2 class="title">Driver Service 24X7</h2>
+                            <p class="paragraph">You can book a driver any time, any
+                                day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefits-of-driver-card text-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-tag"></i>
+                        </div>
+                        <div>
+                            <h2 class="title">Transparent-Fixed Price</h2>
+                            <p class="paragraph">Transparent charges no hidden cost.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefits-of-driver-card text-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <div>
+                            <h2 class="title">Verified Drivers</h2>
+                            <p class="paragraph">Largest database with verified drivers</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="benefits-of-driver-card text-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div>
+                            <h2 class="title">Trained & Groomed
+                                Drivers</h2>
+                            <p class="paragraph">Drivers with our in house training
+                                program.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefits-of-driver-card text-center">
+                        <div class="icon">
+                            <i class="fa-regular fa-address-card"></i>
+                        </div>
+                        <div>
+                            <h2 class="title">Registered Drivers</h2>
+                            <p class="paragraph">Largest data base with 50000
+                                registered drivers on our platform &
+                                growing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefits-of-driver-card text-center">
+                        <div class="icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div>
+                            <h2 class="title">On-time Service</h2>
+                            <p class="paragraph">Wide range of driver services to cater
+                                varied requirements of the customers.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+
+
+   
+    <!-- Deriver Rate section  -->
+
+    <section class="driver-rate-section">
+        <section class="driver-rate-section-heading">
+            <div class="occasion-for-car-driver-heading">
+                <div class="container">
+                    <h1 class="text-hading">Our Plans</h1>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="price" class="price-card">
+                        <div class="plan basic">
+                          <div class="plan-inner">
+                            <div class="hot">hot</div>
+                            <div class="entry-title">
+                              <h3>12 Hours</h3>
+                              <div class="price">₹1100<span>/Round Trip</span>
+                              </div>
+                            </div>
+                            <div class="entry-content">
+                              <ul>
+                                <li><strong>In City :</strong>  Round Trip –INR 800/- Add on charges </li>
+                                <li><strong>Luxury car —</strong>  INR 100/- </li>
+                                <li><strong> Overtime —</strong>  INR 100/- per hour</li>
+                                <li><strong>Drop location change —</strong> INR 100/-</li>
+                                <li><strong>Late night allowance between
+                                    11 PM to 6 AM —</strong>  INR 200/-</li>
+                                <li><strong>Morning allowance between 6
+                                    AM to 7 AM —</strong>  INR 100/-</li>
+                              </ul>
+                            </div>
+                            <div class="btn">
+                              <a href="#">Book Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="price" class="price-card">
+                        <div class="plan basic">
+                          <div class="plan-inner">
+                            <div class="hot">hot</div>
+                            <div class="entry-title">
+                              <h3>12 Hours</h3>
+                              <div class="price">₹1100<span>/Round Trip</span>
+                              </div>
+                            </div>
+                            <div class="entry-content">
+                              <ul>
+                                <li><strong>In City :</strong>  Round Trip –INR 800/- Add on charges </li>
+                                <li><strong>Luxury car —</strong>  INR 100/- </li>
+                                <li><strong> Overtime —</strong>  INR 100/- per hour</li>
+                                <li><strong>Drop location change —</strong> INR 100/-</li>
+                                <li><strong>Late night allowance between
+                                    11 PM to 6 AM —</strong>  INR 200/-</li>
+                                <li><strong>Morning allowance between 6
+                                    AM to 7 AM —</strong>  INR 100/-</li>
+                              </ul>
+                            </div>
+                            <div class="btn">
+                              <a href="#">Book Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="price" class="price-card">
+                        <div class="plan basic">
+                          <div class="plan-inner">
+                            <div class="hot">hot</div>
+                            <div class="entry-title">
+                              <h3>12 Hours</h3>
+                              <div class="price">₹1100<span>/Round Trip</span>
+                              </div>
+                            </div>
+                            <div class="entry-content">
+                              <ul>
+                                <li><strong>In City :</strong>  Round Trip –INR 800/- Add on charges </li>
+                                <li><strong>Luxury car —</strong>  INR 100/- </li>
+                                <li><strong> Overtime —</strong>  INR 100/- per hour</li>
+                                <li><strong>Drop location change —</strong> INR 100/-</li>
+                                <li><strong>Late night allowance between
+                                    11 PM to 6 AM —</strong>  INR 200/-</li>
+                                <li><strong>Morning allowance between 6
+                                    AM to 7 AM —</strong>  INR 100/-</li>
+                              </ul>
+                            </div>
+                            <div class="btn">
+                              <a href="#">Book Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+               
+                <div class="col-md-3">
+                    <div id="price" class="price-card">
+                        <div class="plan basic">
+                          <div class="plan-inner">
+                            <div class="hot">hot</div>
+                            <div class="entry-title">
+                              <h3>12 Hours</h3>
+                              <div class="price">₹1100<span>/Round Trip</span>
+                              </div>
+                            </div>
+                            <div class="entry-content">
+                              <ul>
+                                <li><strong>In City :</strong>  Round Trip –INR 800/- Add on charges </li>
+                                <li><strong>Luxury car —</strong>  INR 100/- </li>
+                                <li><strong> Overtime —</strong>  INR 100/- per hour</li>
+                                <li><strong>Drop location change —</strong> INR 100/-</li>
+                                <li><strong>Late night allowance between
+                                    11 PM to 6 AM —</strong>  INR 200/-</li>
+                                <li><strong>Morning allowance between 6
+                                    AM to 7 AM —</strong>  INR 100/-</li>
+                              </ul>
+                            </div>
+                            <div class="btn">
+                              <a href="#">Book Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="price" class="price-card">
+                        <div class="plan basic">
+                          <div class="plan-inner">
+                            <div class="hot">hot</div>
+                            <div class="entry-title">
+                              <h3>12 Hours</h3>
+                              <div class="price">₹1100<span>/Round Trip</span>
+                              </div>
+                            </div>
+                            <div class="entry-content">
+                              <ul>
+                                <li><strong>In City :</strong>  Round Trip –INR 800/- Add on charges </li>
+                                <li><strong>Luxury car —</strong>  INR 100/- </li>
+                                <li><strong> Overtime —</strong>  INR 100/- per hour</li>
+                                <li><strong>Drop location change —</strong> INR 100/-</li>
+                                <li><strong>Late night allowance between
+                                    11 PM to 6 AM —</strong>  INR 200/-</li>
+                                <li><strong>Morning allowance between 6
+                                    AM to 7 AM —</strong>  INR 100/-</li>
+                              </ul>
+                            </div>
+                            <div class="btn">
+                              <a href="#">Book Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- footer section  -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <h5>SUBSCRIBE TO MAIL!</h5>
+                    <p>Get Meradriver Daily email newsletter with
+                        Special Services, Updates, Offers and many
+                        more</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email Address"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text subscribeBtnFOoter" id="basic-addon2">SUBSCRIBE</span>
+                    </div>
+
+                    <div class="icon-group">
+                        <ul>
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-google-plus-g"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        </ul>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>WE GLAD TO OFFER</h5>
+                    <p>24*7 Drivers Any Where Around Delhi NCR</p>
+                    <p>Booking your personal driver through Meradriver
+                        app launching soon</p>
+                    <p>24*7 Customer Support from Meradriver</p>
+                    <p>Personal| Professional Driver & many more</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>WHO WE ARE</h5>
+                    <p>We are a driver management company based in Delhi.
+                        It is the first professional driver management company
+                        in India. It is a platform where you can find a driver
+                        according to your requirements.</p>
+                    <div>
+                        <div class="d-flex pb-3">
+                            <img src="./assets/common-image/phone-image.png" alt="">
+                            <div class="d-flex ps-3">
+                                <div>
+                                    <p class="mb-0">Customer Support :</p>
+                                    <p class="mb-0 phoneNum2"><a href="tel:+919911138139">+919911138139</a> , <a href="tel:+919266166866">+919266166866</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./assets/common-image/email-image.png" alt="">
+                            <div class="d-flex ps-3">
+                                <div>
+                                    <p class="mb-0">Email :</p>
+                                    <p class="mb-0 phoneNum2"><a href="mailto:info@meradriver.com" target="_blank"> info@meradriver.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-navigation pb-5">
+                <div class="col-md-4 col-12">
+                    <h4>Company</h4>
+                    <div>
+                        <ul>
+                            <!-- <li><a href="">Employee Login</a></li>
+                            <li><a href="#">Services</a></li> -->
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="">Tearm and Conditions</a></li>
+                            <li><a href="">Privacy policy</a></li>
+                            <li><a href="">FAQ</a></li>                            
+                            
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h4>Quick Link</h4>
+                    <div>
+                        <ul>
+                            <li><a href="">Search Job</a></li>
+                            <li><a href="">Post Job</a></li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="">How It Works</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h4>Download Our App</h4>
+                    <div>
+                        <ul>
+                            <li><a href=""><img src="./assets/common-image/google-play.png" style="    width: 120px; border: 1px solid #fff; border-radius: 6px; margin-top: 13px;" alt=""></a></li>
+                            <!-- <li><a href="#">How It Works</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-bottom-section">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-md-4">
+                    <span>Faq</span> | <span>Terms & Conditions</span> | <span>Privacy Policy</span>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <span>copyrights © <span id="copyrightsYears"></span> Meradriver Pvt. Ltd. All rights reserved</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footerWhatsapp">
+        <div class="allWahtsappIcon">
+            <img src="assets/whatsapp1.png" class="whatsapp1" alt="" />
+            <div class="whatsappicon2Cont">
+                <img src="assets/whatsapp1.png" class="whatsapp2" alt="" />
+                <img src="assets/whatsapp1.png" class="whatsapp3" alt="" />
+
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $('.whatsapp1').mouseenter(function(){
+                        $('.whatsappicon2Cont').show();
+
+                    });
+                    $('.whatsappicon2Cont, .footerWhatsapp').mouseleave(function(){
+                        $('.whatsappicon2Cont').hide();
+
+                    });
+                })
+            </script>
+        </div>
+    </div>
+
+    <!-- bootstrap js link  -->
+  
+    <!-- <script src="./script/popper.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script> -->
+
+
+
+
+    <!-- aos js link  -->
+
+
+    <script src="./script/aos.js"></script>
+
+    <!-- swiper slider js link  -->
+   
+    <script src="./script/swiper-bundle.min.js"></script>
+
+    <script>
+        // var swiper = new Swiper(".hero-section-slider", {
+        //     loop: true,
+        //     autoplay: {
+        //         delay: 2500,
+        //         disableOnInteraction: false,
+        //     },
+        // });
+        // $(document).ready(function () {
+        //initialize swiper when document ready
+        var mySwiper = new Swiper('.hero-section-slider', {
+            loop: true,
+            spaceBetween: 50,
+            speed: 1500,
+            effect: 'fade',
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            }
+        })
+
+        // });
+    </script>
+
+    <!-- //our client slider -->
+    <script>
+        var swiper = new Swiper(".our-client", {
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            }
+
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        
+        var d= new Date();
+        document.getElementById('copyrightsYears').innerHTML = d.getFullYear();
+        
+        $(document).ready(function () {
+            $('.navbar-toggler').click(function () {
+                $('.navbar-collapse').addClass('navbar-collapseshowMenu');
+            });
+            $('.closeMenu').click(function () {
+                $('.navbar-collapse').removeClass('navbar-collapseshowMenu');
+            });
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>
